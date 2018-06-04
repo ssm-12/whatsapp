@@ -1,0 +1,76 @@
+:root {
+    font-size: 12px;
+}
+
+body {
+    height: 90vh;
+    overflow-y: hidden;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.profilePic {
+    width: 4rem;
+    padding: 0.4rem;
+}
+
+#headIconContainer {
+    align-self: center;
+}
+
+.icon {
+    font-size: 2rem;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.icon:hover {
+    box-shadow: 0 0 10px #ccc;
+    background-color: #9fa7b5;
+    cursor: pointer;
+}
+
+#bodyContainer {
+    min-height: 100vh!important;
+}
+
+#bodyContainerRow {
+    min-height: 100vh;
+}
+
+#leftPanel {
+    min-height: 100%;
+}
+
+#chatHeads {
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding: 1.5rem!important;
+    /*background-color: pink;*/
+    margin: auto!important;
+}
+
+.chatHead {
+    padding-top: 1rem!important;
+    min-width: 100%;
+    margin: auto;
+}
+
+.chatHead:hover {
+    box-shadow: 0 0 10px #ccc;
+    background-color: #9fa7b5;
+    cursor: pointer;
+}
+
+#rightPanel {
+    background-image: url("../images/background.jpg")!important;
+}
