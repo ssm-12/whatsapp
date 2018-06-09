@@ -20,6 +20,19 @@ body {
     padding: 0.4rem;
 }
 
+.profilePic-large {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 12rem;
+    padding: 0.5rem;
+}
+
+.profile-top {
+    background-color: #0b9113;
+    color: white;
+}
+
 #headIconContainer {
     align-self: center;
 }
@@ -33,7 +46,7 @@ body {
     padding-bottom: 0.4rem;
 }
 
-.icon:hover {
+.icon:hover, .hover:hover {
     box-shadow: 0 0 10px #ccc;
     background-color: #9fa7b5;
     cursor: pointer;
@@ -47,7 +60,7 @@ body {
     min-height: 100vh;
 }
 
-#leftPanel {
+#leftPanel, #leftProfilePanel {
     min-height: 100%;
 }
 
@@ -73,4 +86,39 @@ body {
 
 #rightPanel {
     background-image: url("../images/background.jpg")!important;
+}
+
+.msgLeft {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 40px;
+    background-color: white;
+    max-width: 70%;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.msgRight {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 40px;
+    background-color: white;
+    max-width: 70%;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: #beef97;
+    float: right;
+}
+
+#chatMessages {
+    padding: 1rem;
+    overflow: scroll;
+    max-height: 90vh;
+    overflow-x: hidden;
+}
+
+.padding {
+    padding: 0.5rem;
 }

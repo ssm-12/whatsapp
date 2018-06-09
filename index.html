@@ -24,23 +24,23 @@
 	  	<div class="row">
 	  		<div class="col-sm-3">
 	  			<div>
-	  				<button type="button" class="btn btn-outline-success btn-block btn-lg">Main Page</button>
+	  				<button id="btnMainPage" type="button" class="btn btn-outline-success btn-block btn-lg">Main Page</button>
 	  			</div>
 	  		</div>
 	  		<div class="col-sm-3">
 	  			<div>
-	  				<button type="button" class="btn btn-outline-success btn-block btn-lg">Chat Page</button>
+	  				<button id="btnChatPage" type="button" class="btn btn-outline-success btn-block btn-lg">Chat Page</button>
 	  			</div>
 	  		</div>
 	  		<div class="col-sm-3">
 	  			<div>
-	  				<button type="button" class="btn btn-outline-success btn-block btn-lg">Personal Info</button>
+	  				<button id="btnProfilePage" type="button" class="btn btn-outline-success btn-block btn-lg">Personal Info</button>
 	  			</div>
 	  		</div>
 	  		<div class="col-sm-3">
 	  			<div>
-	  				<button type="button" class="btn btn-outline-success btn-block btn-lg">
-  						Messages <span class="badge badge-pill badge-danger">5</span>
+	  				<button id="btnUnread" type="button" class="btn btn-outline-success btn-block btn-lg">
+  						Messages <span class="badge badge-pill badge-danger">9</span>
 					</button>
 	  			</div>
 	  		</div>
@@ -51,7 +51,7 @@
 
 	<div id="bodyContainer" class="container-fluid">
 		<div id="bodyContainerRow" class="row">
-			<div id="leftPanel" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 border border-success">
+			<div id="leftPanel" class="col-xs-12 col-sm-12 col-md-5 col-lg-4 border border-success">
 				<div id="headContainer" class="row shadow p-1 mb-3 bg-white rounded">
 					<div class="col-xs-2">
 						<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
@@ -65,108 +65,385 @@
 				<div id="chatHeads" class="row">
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicMale1.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Ayush Kumar</h4>
+								</div>
+								<div  id="unread1" class="col d-none" style="text-align:right">
+									<span class="badge badge-pill badge-danger">5</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>Hey buddy! Whats'up?</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>2.30 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicMale3.jpeg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Alan Dias</h4>
+								</div>
+								<div id="unread2" class="col d-none" style="text-align:right">
+									<span class="badge badge-pill badge-danger">2</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>This is a sample mes.</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>8.30 AM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicMale2.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Devbroto Saha</h4>
+								</div>
+								<div class="col d-none" style="text-align:right">
+									<p>Badge</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>When are you coming down to Mumbai?</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>12.00 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicMale3.jpeg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Somnath Dolui</h4>
+								</div>
+								<div  id="unread3" class="col d-none" style="text-align:right">
+									<span class="badge badge-pill badge-danger">1</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>This is a sample message</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>1.30 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicMale1.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Saksham Gambhir</h4>
+								</div>
+								<div class="col d-none" style="text-align:right">
+									<p>Badge</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>It's been a very long time since we met...</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>2.30 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/groupPic.png" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Group 1</h4>
+								</div>
+								<div  id="unread4" class="col d-none" style="text-align:right">
+									<span class="badge badge-pill badge-danger">1</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>The weather is classic here...</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>7.30 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicFemale2.jpeg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Maa</h4>
+								</div>
+								<div class="col d-none" style="text-align:right">
+									<p>Badge</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>bye, love you maa..</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>2.30 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicFemale1.png" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Didibhai</h4>
+								</div>
+								<div class="col d-none" style="text-align:right">
+									<p>Badge</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>Don't forget to bring mom's medicine</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>2.30 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicMale3.jpeg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Saheb Sarkar</h4>
+								</div>
+								<div class="col d-none" style="text-align:right">
+									<p>Badge</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>Amount has been transfered..</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>2.30 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicMale1.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Manas Kumar</h4>
+								</div>
+								<div class="col d-none" style="text-align:right">
+									<p>Badge</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>I don't have any idea about that</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>2.30 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row chatHead">
 						<div class="col-xs-2">
-							<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+							<img src="images/profilePicMale2.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
 						<div class="col border-bottom border-secondary">
-							<h4>Ayush Kumar Anshul</h4>
-							<p>This is a sample message from Ayush</p>
+							<div class="row">
+								<div class="col">
+									<h4>Abhinandan Sah</h4>
+								</div>
+								<div class="col d-none" style="text-align:right">
+									<p>Badge</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<p>It's already done</p>
+								</div>
+								<div class="col" style="text-align:right">
+									<p>2.30 PM</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="rightPanel" class="col-md-8 col-lg-8 d-none d-md-block d-lg-block">
-				<div id="chatMessages">
-					
+
+			<div id="leftProfilePanel" class="col-xs-12 col-sm-12 col-md-5 col-lg-4 border border-success d-none">
+				<div id="headContainer" class="row shadow p-0 mb-3 bg-white rounded">
+					<div class="col profile-top">
+						<div class="row">
+							<div id="goBack" class="col-4 hover" style="background-color: #333030; text-align: center;">
+								<i class="far fa-arrow-alt-circle-left" style="font-size: 5rem;"></i>
+							</div>
+							<div class="col-8">
+								<h1 style="vertical-align: middle; line-height: 200%;">Profile</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="headContainer" class="row shadow p-1 mb-3 bg-white rounded">
+					<div class="col" style="text-align: center;">
+						<img src="images/profileImage.jpg" class="img-fluid rounded-circle profilePic-large" alt="Profile Picture">
+						<p style="font-size: 2rem"><b>Souvik Roy &nbsp;</b><i class="fas fa-pencil-alt" style="font-size: 1.5rem;"></i></p>
+					</div>
+				</div>
+				<div id="chatHeads" class="row">
+					<div class="col">
+						<div class="row shadow rounded">
+							<div class="col-10">
+								<h3><b>About</b></h3>
+								<hr>
+								<p>This section is about me</p>
+							</div>
+							<div class="col-2" style="text-align: right;">
+								<i class="fas fa-pencil-alt" style="font-size: 1.5rem;"></i>		
+							</div>
+						</div>
+						<div class="row shadow rounded" style="margin-top:2vh;">
+							<div class="col-4 border">
+								<h5><b>Mobile No.</b></h5>
+							</div>
+							<div class="col-8 border">
+								+91-8158044014
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- This block will contain the chat messages -->
+			<div id="rightPanel" class="col-md-7 col-lg-8 d-none d-md-block d-lg-block">
+				<div id="chatMessages" class="d-none">
+
+					<!-- Incoming Message -->
+					<div class="row padding">
+						<div class="col">
+							<div class="msgLeft">
+								<p>Hey !!! This is a dummy conversation. I will make it a little longer just for presentation purpose</p>
+							</div>
+						</div>
+					</div>
+					<!-- Outgoing Message -->
+					<div class="row padding">
+						<div class="col">
+							<div class="msgRight">
+								<p>That's great..</p>
+							</div>
+						</div>
+					</div>
+					<div class="row padding">
+						<div class="col">
+							<div class="msgRight">
+								<p>Let's keep this going for a while</p>
+							</div>
+						</div>
+					</div>
+					<!-- Incoming Message -->
+					<div class="row padding">
+						<div class="col">
+							<div class="msgLeft">
+								<p>This is a part of the bootstrap assignment.</p>
+							</div>
+						</div>
+					</div>
+					<!-- Incoming Message -->
+					<div class="row padding">
+						<div class="col">
+							<div class="msgLeft">
+								<p>Bootstrap 4 has been used in this assignment</p>
+							</div>
+						</div>
+					</div>
+					<!-- Outgoing Message -->
+					<div class="row padding">
+						<div class="col">
+							<div class="msgRight">
+								<p>The combination of bootstrap with a few custom css makes it even more powerful</p>
+							</div>
+						</div>
+					</div>
+					<!-- Incoming Message -->
+					<div class="row padding">
+						<div class="col">
+							<div class="msgLeft">
+								<p>...</p>
+							</div>
+						</div>
+					</div>
+					<div class="row padding">
+						<div class="col">
+							<div class="msgLeft">
+								<p>Need to make it a little longer to get the scroll bar</p>
+							</div>
+						</div>
+					</div>
+					<!-- Outgoing Message -->
+					<div class="row padding">
+						<div class="col">
+							<div class="msgRight">
+								<p>Almost got the scroll bar</p>
+							</div>
+						</div>
+					</div>
+					<div class="row padding">
+						<div class="col">
+							<div class="msgRight">
+								<p>...</p>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -179,12 +456,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-	<!-- Test -->
-	<!-- <script>
-		$(document).ready(function() {
-			$("#chatHeads").css("max-height", ($("body").height()-$("nav").height()-$("#headContainer").height()-30));
-		});
-	</script> -->
+	<!-- My custom js file -->
+	<script src="js/myCustomJs.js"></script>
 </body>
 </html>
