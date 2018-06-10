@@ -63,7 +63,7 @@
 					</div>
 				</div>
 				<div id="chatHeads" class="row">
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicMale1.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -86,7 +86,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicMale3.jpeg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -101,7 +101,7 @@
 							</div>
 							<div class="row">
 								<div class="col">
-									<p>This is a sample mes.</p>
+									<p>...</p>
 								</div>
 								<div class="col" style="text-align:right">
 									<p>8.30 AM</p>
@@ -109,7 +109,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicMale2.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -132,7 +132,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicMale3.jpeg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -155,7 +155,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicMale1.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -178,7 +178,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/groupPic.png" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -201,7 +201,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicFemale2.jpeg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -224,7 +224,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicFemale1.png" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -247,7 +247,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicMale3.jpeg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -270,7 +270,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicMale1.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -293,7 +293,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row chatHead">
+					<div class="row chatHead openChat">
 						<div class="col-xs-2">
 							<img src="images/profilePicMale2.jpg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
 						</div>
@@ -365,6 +365,25 @@
 			<!-- This block will contain the chat messages -->
 			<div id="rightPanel" class="col-md-7 col-lg-8 d-none d-md-block d-lg-block">
 				<div id="chatMessages" class="d-none">
+
+					<!-- Single chat message head -->
+					<div class="row shadow p-1 mb-3 bg-white rounded messageHead">
+						<div id="closeChatWindow" class="col-1">
+							<i class="fas fa-arrow-left icon"></i>
+						</div>
+						<div class="col-1">
+							<img src="images/profilePicMale3.jpeg" class="img-fluid rounded-circle profilePic" alt="Profile Picture">
+						</div>
+						<div class="col-3">
+							<h5 style="vertical-align: middle; line-height: 200%; font-weight: bold;">Alan Dias</h5>
+							<p>Typing...</p>
+						</div>
+						<div id="headIconContainer" class="col">
+							<i class="fas fa-ellipsis-v  float-right icon"></i>
+							<i class="fas fa-search  float-right icon"></i>
+						</div>
+					</div>
+
 
 					<!-- Incoming Message -->
 					<div class="row padding">
@@ -444,8 +463,22 @@
 						</div>
 					</div>
 
+					<!-- Type New Message -->
+					<div class="row shadow p-1 mb-3 bg-white rounded messageBottom">
+						<div class="col-1">
+							<i class="fas fa-smile icon"></i>
+						</div>
+						<div class="col-10">
+							<input type="input" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Type your message here...">
+						</div>
+						<div class="col-1">
+							<i class="fas fa-paperclip icon"></i>
+						</div>
+					</div>
+
 				</div>
 			</div>
+			
 		</div>
 	</div>
 

@@ -86,6 +86,8 @@ body {
 
 #rightPanel {
     background-image: url("../images/background.jpg")!important;
+    overflow-y: auto;
+    height: 90vh;
 }
 
 .msgLeft {
@@ -114,11 +116,23 @@ body {
 
 #chatMessages {
     padding: 1rem;
-    overflow: scroll;
-    max-height: 90vh;
-    overflow-x: hidden;
+    /*overflow: scroll;
+    max-height: 90vh;*/
+    /*overflow-x: hidden;*/
 }
 
 .padding {
     padding: 0.5rem;
+}
+
+.messageHead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.messageBottom {
+    position: sticky;
+    bottom: 5px;
+    z-index: 1;
 }
